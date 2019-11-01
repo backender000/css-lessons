@@ -1,16 +1,23 @@
-.header {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 89.67%;
-    background: #FFFFFF;
+.section {
+    display: flex;
+    height: 47px;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.logoGoogle {
-    margin: 30px 108px 36px 30px;
+form input, button {
+    border: none;
 }
 
-.searchBar {
-    
+.section input[type="text"] {
+    background-color: red;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
 }
+
+@media (max-width: 600px) {
+    .section {
+        flex-direction: column;
+    }
+  }
