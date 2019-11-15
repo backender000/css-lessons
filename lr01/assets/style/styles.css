@@ -1,23 +1,62 @@
-.section {
+
+.header {
     display: flex;
-    height: 47px;
-    justify-content: space-between;
+    flex-flow: row nowrap;
     align-items: center;
-
+    justify-content: space-between;
 }
 
-form input, button {
+.container {
+    width: 513px;
+    display:flex;
+    border-radius: 24px;
+    background: #F8F8F8;
+    max-height: 48px;
+}
+
+.container input[type="search"] {
     border: none;
+    width: 513px;
+    background: #F8F8F8;
+    border-radius: 24px;
+    padding-left: 24px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1.2px;
 }
 
-.section input[type="text"] {
-    background-color: red;
-    padding: 5px 5px 5px 5px;
-    border-radius: 20px;
+.container input[type="submit"] {
+    width: 40px;
+    height: 40px;
+    margin: 4px 7px 6px 0;
+    border: none;
+    background: url(../images/Group_6.png) no-repeat;
 }
 
-@media (max-width: 600px) {
-    .section {
-        flex-direction: column;
-    }
-  }
+.header > img {
+    margin: 30px 0 26px 44px;
+}
+
+.profile #first {
+    height: 16px;
+    width: 16px;
+    border: none;
+    background: url(../images/apps_-_material.png) no-repeat;
+    margin: 40px 24px 39px 0;
+}
+
+.profile #second {
+    height: 17.68px;
+    width: 15px;
+    border: none;
+    background: url(../images/Combined_Shape.png) no-repeat;
+    margin: 39px 24px 38px 0;
+}
+
+.profile #third {
+    height: 48px;
+    width: 48px;
+    border: none;
+    background: url(../images/avatar.png) no-repeat;
+    margin: 24px 44px 23px 0;
+}
