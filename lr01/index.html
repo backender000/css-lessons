@@ -1,32 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="assets/style/reset.css" rel="stylesheet">
-    <link href="assets/style/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <title>Document</title>
+	<title>Заголовок</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<link rel="stylesheet" href="css/style.min.css" type="text/css" />
 </head>
-
 <body>
-    <div class="header">
-        <img src="assets/images/logo.png">
-        <div class="search">
-            <form class="container">
-                <input type="search">
-                <input type="submit" value=" ">
-            </form>
-            <button class="mic">gdfgfd</button>
+<div class="container">
+    <header class="header">
+        <a href="/" class="header__logo"><svg class="logo-svg"><use xlink:href="img/sprite.svg#logo"></use></svg></a>
+        <form action="#" method="post" class="form header__form">
+            <input type="text" class="form__input" placeholder="Amsterdam" required>
+            <button type="submit" class="form__btn"><svg class="btn-svg"><use xlink:href="img/sprite.svg#search-btn"></use></svg></button>
+        </form>
+        <a href="#" class="mic"><svg class="mic-svg"><use xlink:href="img/sprite.svg#mic"></use></svg></a>
+        <div class="header__right">
+            <svg class="apps-material"><use xlink:href="img/sprite.svg#apps-material"></use></svg>
+            <svg class="notify"><use xlink:href="img/sprite.svg#notify"></use></svg>
+            <svg class="avatar"><use xlink:href="img/sprite.svg#avatar"></use></svg>
         </div>
-        <div class="profile">
-            <input type="submit" value=" " id="first">
-            <input type="submit" value=" " id="second">
-            <input type="submit" value=" " id="third">
-        </div>
-    </div>
-</body>
+    </header>
+    <ul class="menu">
+        <li class="menu__item active"><a href="">Glance</a></li>
+        <li class="menu__item"><a href="">All</a></li>
+        <li class="menu__item"><a href="">Images</a></li>
+        <li class="menu__item"><a href="">News</a></li>
+        <li class="menu__item"><a href="">Videos</a></li>
+        <li class="menu__item"><a href="">Maps</a></li>
+        <li class="menu__item"><a href="">More</a></li>
+    </ul>
+    <ul class="content">
+        <li class="content__item">
+            <div class="content__box">
+                <h2 class="h2">Top Results</h2>
+                <p class="blue">I amsterdam - Your guide to visit, enjoy, live, work & invest in ...</p>
+                <p class="p-1">
+                    Official portal website of the City of Amsterdam, with everything you need to visit, enjoy, live, work, invest and do business in the Amsterdam Metropolitan Area.
+                </p>
+                <a class="green" href="https://www.iamsterdam.com/">https://www.iamsterdam.com/</a>
+                <ul class="dots">
+                    <li class="dots__item"></li>
+                    <li class="dots__item"></li>
+                    <li class="dots__item"></li>
+                    <li class="dots__item"></li>
+                </ul>
+            </div>
+            <!-- /.content__box -->
 
+            <div class="content__box">
+                <h2 class="h2">About Amsterdam</h2>
+                <p class="p-2">
+                    Amsterdam is the capital and most populous municipality of the Netherlands. Its status as the capital is mandated by the Constitution of the Netherlands, ...
+                </p>
+                <img src="img/wikipedia-logo.png" class="wiki-logo" alt="">
+            </div>
+            <!-- /.content__box -->
+        </li>
+        <li class="content__item">
+            <div class="images">
+               <svg class="close-icon"><use xlink:href="img/sprite.svg#close"></use></svg>
+                <img src="img/image.png" class="img" alt="">
+                <ul class="images__btns">
+                    <li><a href="#"><svg class="visit-icon"><use xlink:href="img/sprite.svg#visit"></use></svg>Visit</a></li>
+                    <li><a href="#"><svg class="save-icon"><use xlink:href="img/sprite.svg#save-icon"></use></svg>Save</a></li>
+                    <li><a href="#"><svg class="share-icon"><use xlink:href="img/sprite.svg#share-icon">Share</use></svg>Share</a></li>
+                    <li>
+                        <a href="#">More images <svg class="arrow-next"><use xlink:href="img/sprite.svg#arrow-next"></use></svg></a>
+                    </li>
+                </ul>
+                <p class="p-2">See Amsterdam by bike or boat. </p>
+                <p class="p-3">The top 10 Amsterdam attractions without the queues</p>
+                <p class="p-4">Traveller.com.au</p>
+            </div>
+        </li>
+        <li class="content__item">
+            <img src="img/maps.png" class="maps" alt="">
+            <img src="img/weather.png" class="weather" alt="">
+        </li>
+    </ul>
+    <!-- /.content -->
+    <ul class="footer">
+        <li class="footer__item">
+            <div class="footer__box footer-blue">
+                <h2 class="h2"><svg class="flight-icon"><use xlink:href="img/sprite.svg#flight"></use></svg>Flights</h2>
+                <p class="p-5">
+                    1 h 10 min flight, from €174 <br>
+                    4h 30 min 1 stop flight, from €207
+                </p>
+            </div>
+            <!-- /.footer__box -->
+        </li>
+        <li class="footer__item">
+            <div class="footer__box footer-black">
+                <h2 class="h2"><svg class="hotel-icon"><use xlink:href="img/sprite.svg#hotel"></use></svg>Hotels</h2>
+                <p class="p-5">
+                    3-star hotel averaging €133 <br>
+                    5-star averaging €290
+                </p>
+            </div>
+        </li>
+        <li class="footer__item">
+            <!-- translate -->
+            <div class="translate">
+                <div class="translate__item">
+                    <div class="translate__row">
+                        <span class="translate__lang">English <svg class="dropdown-icon"><use xlink:href="img/sprite.svg#arrow_drop_down"></use></svg></span>
+                        <ul class="translate__btn">
+                            <li>
+                                <svg class="speak-icon"><use xlink:href="img/sprite.svg#speak"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="listen-icon"><use xlink:href="img/sprite.svg#listen"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="changeactions-icon"><use xlink:href="img/sprite.svg#changeactions"></use></svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <strong class="translate__word">thank you</strong>
+                </div>
+                <div class="translate__item">
+                    <div class="translate__row">
+                        <span class="translate__lang">English <svg class="dropdown-icon"><use xlink:href="img/sprite.svg#arrow_drop_down"></use></svg></span>
+                        <ul class="translate__btn">
+                            <li>
+                                <svg class="speak-icon"><use xlink:href="img/sprite.svg#speak"></use></svg>
+                            </li>
+                            <li>
+                                <svg class="listen-icon"><use xlink:href="img/sprite.svg#listen"></use></svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <strong class="translate__word">dank je</strong>
+                    <span class="translate__descript">Open in Google Translate</span>
+                </div>
+            </div><!-- END translate -->
+        </li>
+    </ul>
+</div>
+</body>
 </html>
